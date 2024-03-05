@@ -1,0 +1,34 @@
+/* Setting paragraph styles */
+p {
+    color: #13D1DB;
+    font-size: 1em;
+}
+
+p#third-para {
+    color: #E71308;
+    font-size: 1em;
+}
+
+/* Setting level 2 headers styles */
+h2 {
+    color: #08E719;
+    font-size: 3em;
+    text-decoration: underline
+}
+
+/* Setting table styles */
+table, td, th {
+    border-style: solid;
+    border-color: 05127F;
+}
+
+/* Setting new CSS rule box style */
+.new-css-rule {
+    color: #F7AB2F;
+}
+
+/* Setting logo style */
+.logo {
+    height: 125px;
+    width: 225px;
+}
