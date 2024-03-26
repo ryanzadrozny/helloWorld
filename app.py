@@ -28,8 +28,14 @@ def favorite_course():
 
     return render_template('favorite-course.html')
 
-@app.route('/contact')
+@app.route('/contact', methods=['GET','POST'])
 def contact():
+    if request.method == 'POST':
+        print('First Name Entered: ' + request.form.get('first_name'))
+        print('Last Name Entered: ' + request.form.get('last_name'))
+        print('Email Entered: ' + request.form.get('email'))
+        print('Phone Number Entered: ' + request.form.get('phone_number'))
+
     return render_template('contact.html')
 
 if __name__ == '__main__':
