@@ -28,7 +28,8 @@ table, td, th {
 }
 
 /* Setting logo style */
-.logo {
+img.logo {
     height: 125px;
     width: 225px;
 }
+
