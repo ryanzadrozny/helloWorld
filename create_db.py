@@ -30,3 +30,4 @@ with app.app_context():
                             email=each_student["email"],  is_honors=each_student["is_honors"])
         db.session.add(a_student)
         db.session.commit()
+
