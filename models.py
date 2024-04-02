@@ -1,6 +1,7 @@
 from flask_sqlalchemy import SQLAlchemy
 db = SQLAlchemy()
 
+# Create student table
 class Student(db.Model):
     __tablename__ = "student"
 
@@ -27,6 +28,7 @@ class Student(db.Model):
     def __repr__(self):
         return f"{self.first_name} {self.last_name}"
 
+#Create major table
 class Major(db.Model):
     __tablename__ = "major"
 

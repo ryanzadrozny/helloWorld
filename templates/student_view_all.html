@@ -13,6 +13,7 @@
     <div class="row">
     <div class="col">
 
+     <!-- Create alert message -->
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
                 {% for category, message in messages %}
@@ -23,6 +24,7 @@
             {% endif %}
         {% endwith %}
 
+     <!-- Create Table with student info -->
     <table class="table table-striped">
         <tr>
             <th>Last Name</th>
@@ -51,12 +53,14 @@
     </div>
     </div>
 
+     <!-- List total number of students -->
     <div class="row">
         <div class="col">
             Total Number of Students: {{ students|length }}
         </div>
     </div>
 
+     <!-- Button to add new student -->
     <div class="row">
         <div class="col text-center">
             <a href="{{ url_for('student_create') }}" class="btn btn-primary" role="button">Add New Student</a>
